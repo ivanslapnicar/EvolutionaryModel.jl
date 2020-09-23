@@ -1,2 +1,2 @@
 # EvolutionaryModel
-Universal evoluztionary model for periodical organisms
+Universal evolutionary model for periodical organisms
