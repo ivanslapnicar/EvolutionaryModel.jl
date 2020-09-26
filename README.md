@@ -26,7 +26,7 @@ At Julia prompt, run
 
 ## Citation
 
-If you use any of this code in your experiments, please make sure to cite the following publication
+If you use any of this code and wish to cite it, please cite the following publication
 ```
 @article{GSL20,
 author = {Eric Goles, Ivan Slapničar and Marco A. Lardies},
