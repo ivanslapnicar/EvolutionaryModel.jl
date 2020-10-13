@@ -3,10 +3,10 @@
 Accompanying Julia code for our paper "Universal evolutionary model for periodical organisms"
 
 ```
-Eric Goles, Ivan Slapničar and Marco A. Lardies: Universal evolutionary model for periodical organisms, submitted
+Eric Goles, Ivan Slapničar and Marco A. Lardies: Universal evolutionary model for periodical organisms, arXiv:2010.00940, submitted
 ```
 
-The manuscript can be found [here]().
+The manuscript can be found [here](https://arxiv.org/abs/2010.00940).
 
 The code in the file `Simulation.jl` was used to run all simulations and produce all figures in our manuscript.
 
@@ -31,12 +31,12 @@ If you use any of this code and wish to cite it, please cite the following publi
 @article{GSL20,
 author = {Eric Goles, Ivan Slapničar and Marco A. Lardies},
 title = {Universal evolutionary model for periodical organisms},
-journal = {},
+journal = {arXiv:2010.00940},
 volume = {},
-year = {},
+year = {2020},
 number = {},
-pages = {},
-url = {},
+pages = {1-22},
+url = {https://arxiv.org/abs/2010.00940},
 doi = {}
 }
 ```
