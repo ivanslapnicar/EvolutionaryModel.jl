@@ -1,6 +1,6 @@
 # Universal Evolutionary Model for Periodical Organisms
 
-Accompanying Julia code for our paper "Universal evolutionary model for periodical organisms"
+Accompanying Julia code for the paper "Universal evolutionary model for periodical organisms"
 
 ```
 Eric Goles, Ivan Slapničar and Marco A. Lardies: Universal evolutionary model for periodical organisms, arXiv:2010.00940, submitted
@@ -8,14 +8,14 @@ Eric Goles, Ivan Slapničar and Marco A. Lardies: Universal evolutionary model f
 
 The manuscript can be found [here](https://arxiv.org/abs/2010.00940).
 
-The code in the file `Simulation.jl` was used to run all simulations and produce all figures in our manuscript.
+The code in the file `Simulation.jl` (also in the Pluto notebook `Simulation_p.jl`) was used to run all simulations and produce all figures in the paper.
 
 ## Installing
 
 Download the repository either as zip-file or clone it to your local file system by running
 
 ```
-git clone git@github.com:ivanslapnicar/EvolutionaryModel.git
+git clone git@github.com:ivanslapnicar/EvolutionaryModel.jl.git
 ```
 
 ## Running the simulations
@@ -23,6 +23,8 @@ git clone git@github.com:ivanslapnicar/EvolutionaryModel.git
 At Julia prompt, run
 
 `include("Simulation.jl")`
+
+Alternatevely, you can use the Pluto notebook `Simulation_p.jl`.
 
 ## Citation
 
