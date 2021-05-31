@@ -1,26 +1,31 @@
 ### A Pluto.jl notebook ###
-# v0.14.4
+# v0.14.7
 
 using Markdown
 using InteractiveUtils
 
-# ╔═╡ 652e4d38-fd5b-474d-ab71-238904352494
+# ╔═╡ a7fd9f4d-a5e0-4d80-888b-a0e3033edceb
+# Disable this cell if running on your machine ...
 begin
-	using LinearAlgebra, Plots, Plots.PlotMeasures, Random, Primes
-	Random.seed!(123)
-	import Plots.spy
-	spy(A)=heatmap(A, yflip=true, legend=false, c=cgrad([:white,:gray,:red]),
-	    aspectratio=1,clim=(0.0,1.0))
+	import Pkg
+    Pkg.activate(mktempdir())
+    Pkg.add([
+        Pkg.PackageSpec(name="Plots"),
+		Pkg.PackageSpec(name="Primes")
+    ])
 end
+
+# ╔═╡ 725cf330-81e2-41a0-be81-6a79f1441e26
+using LinearAlgebra, Plots, Plots.PlotMeasures, Random, Primes
 
 # ╔═╡ 04ba03a0-0e40-4ee9-a82e-06f0e2911b3f
 md"""
-# Universal Evolutionary Model for Periodical Organisms
+# Universal Evolutionary Model for Periodical Species
 
-Accompanying Julia code for the paper "Universal evolutionary model for periodical organisms"
+Accompanying Julia code for the paper "Universal evolutionary model for periodical species"
 
 ```
-Eric Goles, Ivan Slapničar and Marco A. Lardies: Universal evolutionary model for periodical organisms, arXiv:2010.00940, submitted
+Eric Goles, Ivan Slapničar and Marco A. Lardies: Universal evolutionary model for periodical species, arXiv:2010.00940, submitted
 ```
 
 The manuscript can be found [here](https://arxiv.org/abs/2010.00940).
@@ -28,6 +33,14 @@ The manuscript can be found [here](https://arxiv.org/abs/2010.00940).
 The code in this notebook (also in the file `Simulation.jl`) was used to run all simulations and produce all figures in the paper.
 
 """
+
+# ╔═╡ 652e4d38-fd5b-474d-ab71-238904352494
+begin
+	Random.seed!(123)
+	import Plots.spy
+	spy(A)=heatmap(A, yflip=true, legend=false, c=cgrad([:white,:gray,:red]),
+	    aspectratio=1,clim=(0.0,1.0))
+end
 
 # ╔═╡ 49fb78f0-aeab-11eb-04fd-214b12346fc9
 begin
@@ -194,8 +207,11 @@ fig1=myPlots(20,1,v)
 fig4=myPlots(20,4,v)
 
 # ╔═╡ 178b034b-8c6b-40a0-a78d-a75ae93680bc
-# Quantitative plots for neigbourhood [-1,1]
-figQ=myPlots(20,1,v,true)
+begin
+	# Quantitative plots for neigbourhood [-1,1]
+	Random.seed!(123)
+	figQ=myPlots(20,1,v,true)
+end
 
 # ╔═╡ b75d838b-5afe-480b-814e-8c27cdf729e1
 mkpath("figures")
@@ -282,11 +298,13 @@ end
 
 # ╔═╡ Cell order:
 # ╟─04ba03a0-0e40-4ee9-a82e-06f0e2911b3f
+# ╠═a7fd9f4d-a5e0-4d80-888b-a0e3033edceb
+# ╠═725cf330-81e2-41a0-be81-6a79f1441e26
+# ╠═652e4d38-fd5b-474d-ab71-238904352494
 # ╠═49fb78f0-aeab-11eb-04fd-214b12346fc9
 # ╠═d37b7061-8906-4da6-8ae0-560d892e3433
 # ╠═3d92e59b-2814-4015-aced-4ff35f89b957
 # ╠═d969cd01-58bd-4049-91ca-045905013eb5
-# ╠═652e4d38-fd5b-474d-ab71-238904352494
 # ╠═87aa618a-5007-4d96-9968-504e817556a7
 # ╠═89f78ae0-a329-4f72-be29-3ee739518dfc
 # ╠═590b6663-32f1-474e-85b5-932b8a37d36c
