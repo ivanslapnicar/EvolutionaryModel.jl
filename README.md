@@ -11,9 +11,9 @@ The manuscript can be found [here](https://arxiv.org/abs/2010.00940).
 The code in the file `Simulation.jl` (also in the Pluto notebook `Simulation_p.jl`) was used to run all simulations and produce all figures in the paper.
 
 ## Running the simulations
-There are three ways top run the simulations.
+There are three ways to run the simulations.
 
-1. Open the file `Simulation_p.jl.html`,  press `Edit or run this notebook` button and then choose `binder`. This will downlaod necessary packages and star the notebook (in few minutes).
+1. Open the file [Simulation_p.jl.html](https://ivanslapnicar.github.io/EvolutionaryModel.jl/Simulation_p.jl.html),  press `Edit or run this notebook` button and then choose `binder`. This will downlaod necessary packages and star the notebook (in few minutes).
 
 2. Download the repository either as zip-file or clone it to your local file system by running
 ```
