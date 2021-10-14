@@ -3,7 +3,7 @@
 Accompanying Julia code for the paper "Universal evolutionary model for periodical organisms"
 
 ```
-Eric Goles, Ivan Slapničar and Marco A. Lardies: Universal evolutionary model for periodical organisms, arXiv:2010.00940, submitted
+Eric Goles, Ivan Slapničar, Marco A. Lardies, "Universal Evolutionary Model for Periodical Species", Complexity, vol. 2021, Article ID 2976351, 15 pages, 2021. https://doi.org/10.1155/2021/2976351
 ```
 
 The manuscript can be found [here](https://arxiv.org/abs/2010.00940).
@@ -30,13 +30,13 @@ If you use any of this code and wish to cite it, please cite the following publi
 ```
 @article{GSL20,
 author = {Eric Goles, Ivan Slapničar and Marco A. Lardies},
-title = {Universal evolutionary model for periodical organisms},
-journal = {arXiv:2010.00940},
-volume = {},
+title = {Universal Evolutionary Model for Periodical Organisms},
+journal = {Complexity},
+volume = {2021},
 year = {2020},
-number = {},
-pages = {1-22},
-url = {https://arxiv.org/abs/2010.00940},
-doi = {}
+number = {2976351},
+pages = {1-15},
+url = {https://www.hindawi.com/journals/complexity/2021/2976351/},
+doi = {10.1155/2021/2976351}
 }
 ```
